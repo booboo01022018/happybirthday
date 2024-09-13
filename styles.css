@@ -1,114 +1,107 @@
-/* Global Styles */
+/* General body styling */
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Playfair Display', serif;
-  background: linear-gradient(to right, #fefbfb, #f7e4e4);
-  color: #333;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+    font-size: 0.8rem; /* Base font size, adjust this value to scale everything down */
 }
 
-/* Container Styles */
+/* Container styling for the card */
 .container {
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  text-align: center;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 70%; /* Scale down width */
+    max-width: 350px; /* Smaller maximum width */
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
-/* Specific Image Styles */
+/* Image within the card */
 #cardImage {
-  width: 50%; /* Adjust the width to 50% */
-  height: auto; /* Maintain aspect ratio */
-  cursor: pointer;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 60%; /* Scale down image width */
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    margin: 0 auto;
+    display: block;
 }
 
-#cardImage:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+/* Overlay message */
+.message-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1.6rem; /* Scale down overlay text */
+    text-align: center;
+    border-radius: 15px;
 }
 
-/* Front Page Styles */
-.front-page {
-  position: relative;
-  text-align: center;
-}
-
-.front-page h1 {
-  font-size: 1.8rem;
-  color: #d9534f;
-  margin: 20px 0;
-  font-family: 'Great Vibes', cursive;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* Message Page Styles */
+/* Hidden message content */
 .message-page {
-  display: none;
-  opacity: 0;
-  padding: 20px;
-  background-color: #fff;
-  border-top: 5px solid #d9534f;
-  transition: opacity 0.5s ease-in-out;
+    padding: 15px; /* Scale down padding */
+    text-align: center;
 }
 
-/* Fade-in effect */
-.message-page.show {
-  display: block;
-  opacity: 1;
+/* Font sizes adjust based on screen size */
+h1 {
+    font-size: 1.4rem; /* Scale down heading size */
 }
 
-/* Message Page Heading */
-.message-page h1 {
-  font-size: 2.5rem;
-  color: #d9534f;
-  font-family: 'Great Vibes', cursive;
-  margin-bottom: 15px;
-  letter-spacing: 0.5px;
+p {
+    font-size: 0.8rem; /* Scale down paragraph size */
+    margin: 0.8rem 0; /* Adjust margins */
 }
 
-/* Message Page Paragraphs */
-.message-page p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin: 15px 0;
-  font-family: 'Playfair Display', serif;
-  text-align: left;
-}
-
-/* Couple Photo Styles */
-.couple-photo {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Button Styles */
+/* Back button */
 button {
-  padding: 10px 20px;
-  font-size: 1.1rem;
-  color: #fff;
-  background-color: #d9534f;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: 'Playfair Display', serif;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Scale down padding */
+    font-size: 0.8rem; /* Scale down button text */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #c14443;
-  transform: scale(1.05);
+    background-color: #ff4d4d;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .container {
+        width: 85%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Further scale down heading size on small screens */
+    }
+
+    p {
+        font-size: 0.7rem; /* Further scale down paragraph size on small screens */
+    }
+
+    button {
+        padding: 6px 12px; /* Further scale down button padding */
+        font-size: 0.7rem; /* Further scale down button text */
+    }
+
+    /* Further reduce image size on mobile */
+    #cardImage {
+        width: 50%; /* Further reduce image size on small screens */
+    }
 }
