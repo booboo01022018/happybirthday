@@ -12,7 +12,7 @@ body {
 /* Container styling for the card */
 .container {
     width: 80%;
-    max-width: 600px;  /* Limits the width for larger screens */
+    max-width: 500px;  /* Limits the width for larger screens */
     height: auto;
     overflow: hidden;
     position: relative;
@@ -23,9 +23,11 @@ body {
 
 /* Image within the card */
 #cardImage {
-    width: 100%;  /* Ensures the image scales with the container */
+    width: 90%;  /* Reduce image size to 90% of the container width */
     height: auto;
     border-radius: 15px 15px 0 0;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block;
 }
 
 /* Overlay message */
@@ -95,5 +97,10 @@ button:hover {
     button {
         padding: 8px 16px;
         font-size: 0.9rem;
+    }
+
+    /* Smaller image for mobile screens */
+    #cardImage {
+        width: 80%; /* Further reduce image size for small screens */
     }
 }
