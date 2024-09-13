@@ -12,7 +12,7 @@ body {
 /* Container styling for the card */
 .container {
     width: 80%;
-    max-width: 500px;  /* Limits the width for larger screens */
+    max-width: 420px;  /* Reduced the max-width for the container */
     height: auto;
     overflow: hidden;
     position: relative;
@@ -23,10 +23,10 @@ body {
 
 /* Image within the card */
 #cardImage {
-    width: 90%;  /* Reduce image size to 90% of the container width */
+    width: 70%;  /* Reduced the image size by 30% */
     height: auto;
     border-radius: 15px 15px 0 0;
-    margin: 0 auto; /* Center the image horizontally */
+    margin: 0 auto;  /* Center the image */
     display: block;
 }
 
@@ -99,8 +99,8 @@ button:hover {
         font-size: 0.9rem;
     }
 
-    /* Smaller image for mobile screens */
+    /* Further reduce image size on mobile */
     #cardImage {
-        width: 80%; /* Further reduce image size for small screens */
+        width: 60%;  /* Further reduce the image size for mobile screens */
     }
 }
