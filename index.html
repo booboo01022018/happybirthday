@@ -1,31 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romantic Birthday Card</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="birthday-card.css">
-</head>
-<body>
-    <div class="container">
-        <div class="front-page" id="frontPage">
-            <img src="https://i.postimg.cc/SNy1df3W/birthday-toast.jpg" alt="Romantic Toast Image" id="cardImage">
-            <div class="message-overlay">
-                <h1>Tap to Reveal</h1>
-            </div>
-        </div>
-        <div class="message-page hidden" id="messagePage">
-            <img src="https://i.postimg.cc/SNy1df3W/birthday-toast.jpg" alt="Couple Photo" class="couple-photo">
-            <h1>Happy Birthday, My Love!</h1>
-            <p>To the one who makes my world brighter and my heart fuller,</p>
-            <p>Today is a celebration of you—your kindness, your spirit, and the joy you bring into my life. Every moment with you is a cherished memory, and I am eternally grateful for your love and companionship.</p>
-            <p>May this day be filled with all the happiness and joy you deserve. You are my everything, and I look forward to creating many more beautiful moments together.</p>
-            <p>With all my love,</p>
-            <p><strong>Forever Yours</strong></p>
-            <button id="backButton">Back to Card</button>
-        </div>
-    </div>
-    <script src="birthday-card.jss"></script>
-</body>
-</html>
+/* General body styling */
+body {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+/* Container styling for the card */
+.container {
+    width: 80%;
+    max-width: 420px;  /* Reduced the max-width for the container */
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Image within the card */
+#cardImage {
+    width: 70%;  /* Reduced the image size by 30% */
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    margin: 0 auto;  /* Center the image */
+    display: block;
+}
+
+/* Overlay message */
+.message-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Hidden message content */
+.message-page {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Font sizes adjust based on screen size */
+h1 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size:
