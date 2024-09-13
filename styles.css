@@ -22,20 +22,25 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Image Styles */
-img {
-  width: 100%;
-  height: auto;
+/* Specific Image Styles */
+#cardImage {
+  width: 50%; /* Adjust the width to 50% */
+  height: auto; /* Maintain aspect ratio */
   cursor: pointer;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-img:hover {
+#cardImage:hover {
   transform: scale(1.05);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Front Page Styles */
+.front-page {
+  position: relative;
+  text-align: center;
+}
+
 .front-page h1 {
   font-size: 1.8rem;
   color: #d9534f;
