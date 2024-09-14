@@ -92,9 +92,9 @@ img:hover {
   margin-left: 0;
 }
 
-/* Align "Love," and "Tree" to the right */
+/* Align "Love," to the left and "Tree" to the right */
 .message-page p:last-of-type {
-  text-align: right;
+  text-align: left;
   padding: 0 1.5rem; /* Add padding to both sides of the last paragraph */
   margin: 15px 0; /* Maintain spacing between paragraphs */
 }
