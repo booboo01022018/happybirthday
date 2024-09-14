@@ -68,6 +68,7 @@ img:hover {
   font-family: 'Great Vibes', cursive;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
+  text-align: left; /* Align heading to the left */
 }
 
 /* Message Page Paragraphs */
@@ -76,7 +77,32 @@ img:hover {
   line-height: 1.8;
   margin: 15px 0;
   font-family: 'Playfair Display', serif;
+  text-align: left; /* Align paragraphs to the left */
+}
+
+/* Specific Indentations */
+.message-page p:nth-of-type(2) {
+  text-indent: 1.5rem; /* Indent the paragraph starting with "The day I started" */
+}
+
+.message-page p:nth-of-type(3) {
+  text-indent: 1.5rem; /* Indent the paragraph starting with "You're the purpose" */
+}
+
+.message-page p:nth-of-type(4) {
+  text-indent: 1.5rem; /* Indent the paragraph starting with "My hope is" */
+}
+
+/* Align "Boo!" to the left */
+.message-page h1:first-of-type {
   text-align: left;
+  margin-left: 0;
+}
+
+/* Align "Love, Tree" to the right */
+.message-page p:last-of-type {
+  text-align: right;
+  margin-right: 0;
 }
 
 /* Couple Photo Styles */
