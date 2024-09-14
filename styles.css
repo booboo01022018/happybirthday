@@ -49,7 +49,7 @@ img:hover {
 .message-page {
   display: none;
   opacity: 0;
-  padding: 20px; /* Added padding for spacing around paragraphs */
+  padding: 20px; /* Padding for spacing around paragraphs */
   background-color: #fff;
   border-top: 5px solid #d9534f;
   transition: opacity 0.5s ease-in-out;
@@ -78,61 +78,9 @@ img:hover {
   margin: 15px 0; /* Space between paragraphs */
   font-family: 'Playfair Display', serif;
   text-align: left; /* Align paragraphs to the left */
-  padding-left: 1.5rem; /* Added padding to the left edge */
-  padding-right: 1.5rem; /* Added padding to the right edge */
+  padding: 0 1.5rem; /* Added padding to both sides of paragraphs */
 }
 
 /* Specific Indentations */
 .message-page p:nth-of-type(2) {
-  text-indent: 1.5rem; /* Indent the paragraph starting with "The day I started" */
-}
-
-.message-page p:nth-of-type(3) {
-  text-indent: 1.5rem; /* Indent the paragraph starting with "You're the purpose" */
-}
-
-.message-page p:nth-of-type(4) {
-  text-indent: 1.5rem; /* Indent the paragraph starting with "My hope is" */
-}
-
-/* Align "Boo!" to the left */
-.message-page h1:first-of-type {
-  text-align: left;
-  margin-left: 0;
-}
-
-/* Align "Love, Tree" to the right */
-.message-page p:last-of-type {
-  text-align: right;
-  margin-right: 0;
-  padding-right: 0; /* Ensure there's no extra padding on the right */
-}
-
-/* Couple Photo Styles */
-.couple-photo {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Button Styles */
-button {
-  padding: 10px 20px;
-  font-size: 1.1rem;
-  color: #fff;
-  background-color: #d9534f;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: 'Playfair Display', serif;
-}
-
-button:hover {
-  background-color: #c14443;
-  transform: scale(1.05);
-}
+  text-indent: 1.5rem; /* Indent the paragraph starting wit
