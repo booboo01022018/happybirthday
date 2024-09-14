@@ -100,12 +100,17 @@ img:hover {
   margin-left: 0;
 }
 
-/* Align "Love, Tree" to the right */
+/* Align "Love," and "Tree" to the right */
 .message-page p:last-of-type {
   text-align: right;
-  padding-right: 1.5rem; /* Add padding to the right edge */
-  padding-left: 0; /* Remove padding from the left edge */
-  margin-right: 0;
+  padding: 0 1.5rem; /* Add padding to both sides of the last paragraph */
+  margin: 15px 0; /* Maintain spacing between paragraphs */
+}
+
+.message-page p:last-of-type ~ p:last-of-type {
+  text-align: right;
+  padding: 0 1.5rem; /* Add padding to both sides of the second last paragraph */
+  margin: 15px 0; /* Maintain spacing between paragraphs */
 }
 
 /* Couple Photo Styles */
